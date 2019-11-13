@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.27
+
+Name: libns3-lte
+Description: ns-3 module ns3-lte
+Version: 3.27
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.27-lte-debug
+Cflags: -I${includedir}
+Requires: libns3.27-core-debug libns3.27-network-debug libns3.27-spectrum-debug libns3.27-stats-debug libns3.27-buildings-debug libns3.27-virtual-net-device-debug libns3.27-point-to-point-debug libns3.27-applications-debug libns3.27-internet-debug libns3.27-csma-debug libns3.27-fd-net-device-debug
